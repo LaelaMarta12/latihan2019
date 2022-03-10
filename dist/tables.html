@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> MY WEB </title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SMK NU</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    
+                    <div class="input-group-append">
+                        
+                    </div>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ml-auto ml-md-0">
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user fa-fw"></i> profile</a>
+                        
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">menu</div>
+
+
+                            <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                home</a>
+
+                           
+
+
+
+
+
+                           
+                            
+                            
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    
+                                   
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Data</div>
+                            <a class="nav-link" href="tables.html"
+                                ><div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Data Siswa</a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+
+
+
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4"></h1>
+
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            
+                        </ol>
+                       
+
+
+
+
+
+
+
+
+
+                        <div class="card mb-4">
+                            <div class="card-header"><i class="fas fa-table mr-1"></i>Data Siswa X RPL 1</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        
+            <tr bgcolor="00FF00">
+                <th colspan="2" align="center">NO</th> 
+                <th rowspan="2">NAMA LENGKAP</th>
+                <th rowspan="2" >JENIS KELAMIN</th>
+                <th colspan="4" align="center">MATA PELAJARAN</th>
+                <th rowspan="2">KETERANGAN</th>
+            </tr>
+            <tr bgcolor="00FF00">
+                <th>URUT</th>
+                <th>INDUK</th>
+                <th>BAHASA INDONESIA</th>
+                <th>MATEMATIKA</th>
+                <th>INGGRIS</th>
+                <th>TEORI KEJURUAN</th>
+            </tr>
+                                                      
+            <tr>
+                <td>1</td>
+                <td>19200718</td>
+                <td>Abdul azis salim</td>
+                <td align="center">L</td>
+                <td align="center">65</td>
+                <td align="center">60</td>
+                <td align="center">70</td>
+                <td align="center">75</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>19200719</td>
+                <td>Adjie maulana </td>
+                <td align="center">L</td>
+                <td align="center">70</td>
+                <td align="center">75</td>
+                <td align="center">60</td>
+                <td align="center">80</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>19200720</td>
+                <td>Aldi Nur Ismail</td>
+                <td align="center">L</td>
+                <td align="center">60</td>
+                <td align="center">65</td>
+                <td align="center">70</td>
+                <td align="center">80</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>19200721</td>
+                <td>Alisni</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">70</td>
+                <td align="center">75</td>
+                <td align="center">85</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>19200722</td>
+                <td>Deby MR</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">70</td>
+                <td align="center">60</td>
+                <td align="center">86</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>19200723</td>
+                <td>Dian A</td> 
+                <td align="center">L</td>
+                <td align="center">68</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>19200724</td>
+                <td>Dila H</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">60</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>19200725</td>
+                <td>falhan f</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">50</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>19200726</td>
+                <td>Falhan h</td>
+                <td align="center">L</td>
+                <td align="center">67</td>
+                <td align="center">89</td>
+                <td align="center">78</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>19200727</td>
+                <td>fikri</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">66</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>19200728</td>
+                <td>Fitria</td>
+                <td align="center">P</td>
+                <td align="center">86</td>
+                <td align="center">89</td>
+                <td align="center">67</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>19200729</td>
+                <td>Hali</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">84</td>
+                <td align="center">86</td>
+                <td align="center">98</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>19200730</td>
+                <td>Haikal</td>
+                <td align="center">L</td>
+                <td align="center">82</td>
+                <td align="center">87</td>
+                <td align="center">85</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>19200731</td>
+                <td>Husni</td>
+                <td align="center">L</td>
+                <td align="center">86</td>
+                <td align="center">89</td>
+                <td align="center">89</td>
+                <td align="center">97</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>19200732</td>
+                <td>Ikbar</td>
+                <td align="center">L</td>
+                <td align="center">86</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">56</td>
+                <td align="center">lulus</td>
+            </tr>
+            v
+            <tr>
+                <td>16</td>
+                <td>19200733</td>
+                <td>Ira</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>19200734</td>
+                <td>Irma</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19200735</td>
+                <td>Jajang</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>19200736</td>
+                <td>Juni</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>19200737</td>
+                <td>Laela M</td>
+                <td align="center">P</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>19200738</td>
+                <td>Levi</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>19200739</td>
+                <td>Lita</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">89</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>19200740</td>
+                <td>Miftah</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">50</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>19200741</td>
+                <td>M.Hilmi</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">87</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>19200742</td>
+                <td>Nurhalifah</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">90</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>19200743</td>
+                <td>Rifky M</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">74</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>19200744</td>
+                <td>Rifky A</td>
+                <td align="center">L</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">88</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>19200745</td>
+                <td>Rini</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">89</td>
+                <td align="center">70</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>19200746</td>
+                <td>Risa</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">88</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>19200747</td>
+                <td>Risma H</td>
+                <td align="center">P</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">100</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>19200748</td>
+                <td>Rosdi</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">20</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>S19200749</td>
+                <td>Salman</td>
+                <td align="center">L</td>
+                <td align="center">40</td>
+                <td align="center">39</td>
+                <td align="center">16</td>
+                <td align="center">52</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>19200750</td>
+                <td>Utika</td>
+                <td align="center">P</td>
+                <td align="center">89</td>
+                <td align="center">89</td>
+                <td align="center">86</td>
+                <td align="center">90</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>19200751</td>
+                <td>Wulan</td>
+                <td align="center">P</td>
+                <td align="center">80</td>
+                <td align="center">80</td>
+                <td align="center">86</td>
+                <td align="center">99</td>
+                <td align="center">lulus</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>19200752</td>
+                <td>Fikri A</td>
+                <td align="center">L</td>
+                <td align="center">87</td>
+                <td align="center">89</td>
+                <td align="center">88</td>
+                <td align="center">97</td>
+                <td align="center">lulus</td>
+            </tr>
+
+
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+<footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Laila Mukaromah 2020</div>
+                            <div>
+                                                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/datatables-demo.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+                
